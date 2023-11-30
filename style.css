@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'Inter UI';
+    font-style:  normal;
+    font-weight: 100;
+    src: url("font-files/Inter-UI-Thin.woff2?v=3.2") format("woff2"),
+         url("font-files/Inter-UI-Thin.woff?v=3.2") format("woff");
+  }
+
+/*banner part backgroung*/
+.banner{
+    background-size: 350%;
+    width: 100%;
+    height: 120vh;
+    background-image: linear-gradient(135deg, #5898EB, #62ABEF,  #62ABEF,  #78D3F8,#A1CFCC, #f8b480, #f8b480, #f8b480, #f8b480, #D7A6BD, #D7A6BD, #A1CFCC);
+animation: color 10s linear 5s infinite alternate;
+position: relative;
+
+}
+
+@keyframes color {
+    0%{
+background-position: left;
+    }
+35%{
+
+        background-position: left;
+            
+}
+    70%{
+        background-position: right;
+            }
+    100%{
+background-position: right;
+    }
+    
+}
+
+@media screen and (min-width: 786) {
+    
+}
+
+
+
+.nav{
+    width: 100%;
+    height: 15vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+    
+}
+.nav-left{
+    margin-left: 1%;
+}
+
+.nav-left h1 a{
+text-decoration: none;
+font-size: 1.8em;
+font-weight: 400;
+font-family:   sans-serif;
+font-weight: lighter;
+color: #FFFFFF;
+
+}
+
+.data{
+    position: absolute;
+    font-size: 0.7rem;
+    margin-left: 6%;
+    line-height: 0.5%;
+    color: #FFFFFF;
+    font-family: 'Inter UI', sans-serif;
+    font-weight: lighter;
+
+}
+
+.nav-middle{
+    width: 40vw;
+}
+
+.nav-middle ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-middle ul li{
+    list-style: none;
+}
+
+.nav-middle ul li a{
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-stretch: 100%;
+    color: #ffffff;
+}
+
+.nav-right{
+    display: flex;
+    width: 25vw;
+    justify-content: space-around;
+}
+
+.nav-right ul{
+    display: flex;
+    justify-content: space-around;
+    width: 18vw;
+}
+
+.nav-right ul li{
+    list-style: none;
+    
+}
+.nav-right ul li a{
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-stretch: 100%;
+    
+}
+
+.nav select {
+    border: none;
+    background-color: transparent;
+   font-size: 1em;
+   color: #ffffff;
+   
+}
+.nav select option{
+    color: black;
+}
+
+#fact{
+    background-color:transparent;
+    border: 2px solid #FFFFFF;
+    padding: 12px 16PX;
+    border-radius: 10px;
+    font-size: 0.8em;
+}
+
+#demo{
+background-color:#FFFFFF33 ;
+    
+    padding: 14px 18px;
+    border-radius: 10px;
+    
+}
+
+.banner-middle{
+    display: flex;
+    width: 100%;
+    height: 85vh;
+    justify-content: space-between;
+}
+.banner-middle img{
+    width: 155px;
+    height: 75px;
+    color: #ffffff;
+    padding: 0;
+    mix-blend-mode: multiply;
+    margin-top: 4%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+
+}
+
+.glob{
+    height: 85vh;
+    width: 35%;
+    background-image: url(/SKSLink/photos/Capture.png);
+    position: absolute;
+    margin-left: 66%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: rotateY(20deg);
+
+/* mix-blend-mode: exclusion; */
+
+}
+
+.glob-left{
+    width: 100%;
+    height: 85vh;
+}
+
+
+.glob-left h1{
+    font-size: 68px;
+    margin-left: 1%;
+    font-family:  sans-serif;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 65px;
+    letter-spacing: 0.1px;
+}
+
+.glob-left h2{
+    font-size: 20px;
+    margin-left: 1%;
+    margin-top: 1.5%;
+    font-family: sans-serif;
+    color: #FFFFFF;
+}
+.swtich{
+    width: 60%;
+    
+    margin-top: 3%;
+    margin-left: 1%;
+}
+.swtich ul{
+    display: flex;
+    justify-content: safe;
+    column-gap: 3%;
+    
+}
+.swtich ul li{
+    list-style: none;
+}
+
+.swtich ul li a{
+    text-decoration: none;
+    background-color: #FFFFFF4D ;
+    padding: 10px 24px;
+    border-radius: 10px;
+    font-size: 1.3em;
+    color: #FFFFFF;
+    font-family: sans-serif;
+
+
+}
+.swtich ul li a:hover{
+    background-color: rgba(227, 221, 221, 0.308) ;
+    backdrop-filter: blur(10px);
+}
+
+/* make image animation */
+
+
+
+.ANI{
+    margin-left: 2%;
+    margin-top: 3%;
+    width: 80%;
+    display: none;
+}
+.ANI img{
+    mix-blend-mode: multiply;
+    height: 60px;
+    width: 170px;
+    padding: 5px 50px 5px 0px;
+    animation: imgani 0.5s linear ;
+    /* transform: translateX(100%); */
+    /* transition-delay: calc(6s * var(--i)); */
+
+    
+}
+/* .ANI.show-aanimate .img{
+    transform: translateX(0);
+} */
+
+@keyframes imgani {
+    0%{
+transform: translateX(100%);
+opacity: 0;
+    }
+    30%{
+        transform: translateX(70%);
+        opacity: 0;
+            }
+
+            75%{
+                transform: translateX(35%);
+                opacity: 0.5;
+                
+                    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+            }
+}
+
+
+
+
+.navx{
+    width: 100%;
+    height: 15vh;
+    background-color: #bfe3fd86;
+    background-color: #ffffff81;
+    backdrop-filter: blur(30px);
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px solid #c0e4ff99;
+   box-shadow: 1px 1px 25px 3px #69869eab;
+position: sticky;
+top: 0;
+z-index: 9;
+    
+}
+.navx .nav-left{
+    margin-left: 1%;
+}
+
+.navx .nav-left h1 a{
+text-decoration: none;
+font-size: 1.8em;
+font-weight: 400;
+font-family:   sans-serif;
+font-weight: lighter;
+color: #2E7AC5;
+
+}
+.navx .link{
+    color: #FFBD59;
+}
+
+.navx .data{
+    position: absolute;
+    font-size: 0.7rem;
+    margin-left: 6%;
+    line-height: 0.5%;
+    color:  #2E7AC5;
+    font-family: 'Inter UI', sans-serif;
+    font-weight: lighter;
+
+}
+
+.navx .nav-middle{
+    width: 40vw;
+}
+
+.navx .nav-middle ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navx .nav-middle ul li{
+    list-style: none;
+}
+
+.navx .nav-middle ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-stretch: 100%;
+    color: #111827;
+}
+
+.navx .nav-right{
+    display: flex;
+    width: 25vw;
+    justify-content: space-around;
+}
+
+.navx .nav-right ul{
+    display: flex;
+    justify-content: space-around;
+    width: 18vw;
+}
+
+.navx .nav-right ul li{
+    list-style: none;
+    
+}
+.navx .nav-right ul li a{
+    font-family: 'Inter', sans-serif;
+    color: #111827;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-stretch: 100%;
+    
+}
+
+.navx select {
+    border: none;
+    background-color: transparent;
+   font-size: 1em;
+   color:  #111827;
+   
+}
+.navx select option{
+    color: black;
+}
+
+.navx #fact{
+    background-color:transparent;
+    border: 2px solid #FFFFFF;
+    padding: 12px 16PX;
+    border-radius: 10px;
+    font-size: 13.08px;
+    font-weight: 700;
+    color: #4A89CA;
+}
+
+.navx #demo{
+background-color:#ffffff66 ;
+backdrop-filter: blur(10px);
+    
+    padding: 14px 18px;
+    border-radius: 10px;
+    
+}
+
